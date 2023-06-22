@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E1: Condicionales, Ciclos y Funciones</title>
+</head>
+<body>
+
+    <h1> E1: Condicionales, Ciclos y Funciones</h1>
+    <script>
+        console.log("Ejercicio 1");
+        function parImpar (n)
+        {
+            if (n % 2 === 0)
+            return console.log (`El numero ${n} es par`);
+            console.log (`El numero ${n} es impar`);
+        }
+        parImpar(4);
+
+
+
+
+        console.log("");
+        console.log("Ejercicio 2");
+        function mayor (n1,n2) {
+            if (n1===n2)
+            return console.log (`Los numeros son iguales`);
+            if (n1>n2)
+            return console.log (`El numero ${n1} es mayor a ${n2}`);
+            console.log (`El numero ${n2} es mayor a ${n1}`);
+        }
+        mayor(42,100);
+
+
+
+
+
+        console.log("");
+        console.log("Ejercicio 3");
+        function multiplo5 (n){
+            if (n % 5 === 0)
+            return console.log (`El numero ${n} es multiplo de 5`);
+            console.log (`El numero ${n} no es multiplo de 5`);
+        }
+        multiplo5 (15);
+
+
+
+
+
+        console.log("");
+        console.log("Ejercicio 4");
+        function imprimir (n){
+            for(let i =0; i<=n; i++){                
+                console.log (`${i}`);
+            }
+        }
+        imprimir(7);
+
+
+
+
+        console.log("");
+        console.log("Ejercicio 5");
+        function palabra (n,p){
+            for (let i = 1; i<=n;i++){
+                console.log (`${i}. ${p}`);
+            }
+        }
+        palabra (5, "Hola");
+
+
+
+
+
+        console.log("");
+        console.log("Ejercicio 6");
+        function arr (a){
+            for (let i=0; i<a.length;i++){
+                console.log (`${i+1}. ${a[i]}`);
+            }
+        }
+        let colores= ["Rojo", "Azul" ,"Verde" ,"Negro"];
+        arr(colores);
+
+
+
+
+        console.log("");
+        console.log("Ejercicio 7");
+        function arrNum (a){
+
+            for (let i =0; i<a.length; i++){
+                if(i!=4)
+                console.log (`${a[i]}`);
+            }
+        }
+        let numeros = [1,2,3,4,5,6,7,8,9,10];
+        arrNum(numeros);
+
+
+
+
+
+        console.log("");
+        console.log("Ejercicio 8");
+        function multi (a,n){
+            for (let i =0; i<a.length; i++){
+                console.log (`${i+1}. ${a[i]}x${n} = ${a[i]*n}`);
+                }
+        }
+        let num = [2,6,1,0,4];
+        multi (num,5);
+
+
+
+    </script>
+    
+</body>
+</html>
